@@ -17,7 +17,7 @@ function Transaction() {
     setRegistering(false); 
     setDescription(''); 
     setAmount(''); 
-    setSpecificType(''); // Reset specificType
+    setSpecificType(''); 
   };
 
   return (
@@ -26,7 +26,7 @@ function Transaction() {
         Add New Transaction
       </button>
       {registering && (
-        <div className='fixed top-0 left-0 bottom-0 right-0 bg-green-500 flex items-center justify-center bg-black bg-opacity-70'>
+        <div className='fixed top-0 left-0 bottom-0 right-0 flex items-center justify-center bg-black bg-opacity-70'>
           <form onSubmit={handleAddTransaction} className='bg-white p-5 rounded shadow-md flex flex-col w-96 gap-1'>
             <div className='flex justify-between items-center my-1'>
               <span className='text-xl'>Add New Transaction</span>
